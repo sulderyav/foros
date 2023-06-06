@@ -1,0 +1,17 @@
+// Ejemplo de manipulación de arrays
+
+// Función slice: Devuelve una copia superficial de una porción de un array
+const array1 = [1, 2, 3, 4, 5];
+const array2 = array1.slice(1, 4);
+console.log(array2); // Resultado: [2, 3, 4]
+
+// Función splice: Cambia el contenido de un array eliminando, reemplazando o agregando elementos
+const array3 = [1, 2, 3, 4, 5];
+const removedElements = array3.splice(2, 2, 'a', 'b', 'c');
+console.log(array3); // Resultado: [1, 2, 'a', 'b', 'c', 5]
+console.log(removedElements); // Resultado: [3, 4]
+
+// Función sort: Ordena los elementos de un array localmente y devuelve el array ordenado
+const array4 = [3, 1, 4, 2, 5];
+array4.sort();
+console.log(array4); // Resultado: [1, 2, 3, 4, 5]
